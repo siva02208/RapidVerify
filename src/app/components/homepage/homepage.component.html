@@ -1,0 +1,42 @@
+
+
+
+  <main>
+    <div class="intro">
+      <h1>Passport Verification</h1>
+      <p>You can verify your passport credentials here.</p>
+      <input type="email" placeholder="Email"  
+ 
+      [(ngModel)]="formData.email"
+       #emailInput name="email">
+
+  <button (click)="navigate(formData.email)">Verify</button>
+    </div>
+    <div class="achievements">
+      <div class="work">
+        <i class="fas fa-atom"></i>
+        <p class="work-heading">Travel</p>
+        <p class="work-text">With passport you will be able to travel to various places around the globe with much access and ease so have a passport.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-skiing"></i>
+        <p class="work-heading">Citizenship</p>
+        <p class="work-text">It is an official document that confirms your citizenship and is often required for various legal and administrative purposes.</p>
+      </div>
+      <div class="work">
+        <i class="fas fa-ethernet"></i>
+        <p class="work-heading">Legal Transactions</p>
+        <p class="work-text">Passports are commonly accepted as a valid form of identification for various financial and legal transactions.</p>
+      </div>
+    </div>
+    <div class="about-me">
+      <div class="about-me-text">
+        <h2>About Passport</h2>
+        <p>A passport is an official government document that certifies an individual's identity and citizenship. It includes 
+            essential personal information, a photograph, and may incorporate biometricfile data. Primarily used for 
+            international travel, it enables entry into foreign countries, providing a standardized means of identification 
+            and facilitating cross-border mobility.</p>
+      </div>
+      <img src="https://fthmb.tqn.com/2WxLpcOV6u2LyOiw9RxAmDemlSs=/2185x1373/filters:fill(auto,1)/USPassportandmap-570829593df78c7d9eba3c75.jpg" alt="me">
+    </div>
+  </main>

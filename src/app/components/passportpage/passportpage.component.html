@@ -1,0 +1,34 @@
+<body class="body">
+    <div class="container">
+        <h2> Upload Your Adhar</h2>
+      
+        <form (submit)="onSubmit()" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="file">Choose a document:</label>
+            <input type="file" id="file" name="file" (change)="onFileSelected($event)" accept=".pdf, .doc, .docx">
+          </div>
+      
+          <button type="submit" [disabled]="!selectedFile">Upload</button>
+        </form>
+      
+        <div *ngIf="uploadedFileName">
+          <p>Uploaded Document: {{ uploadedFileName }}</p>
+        </div>
+      </div>
+      
+      <div class="achievements">
+        <div class="work">
+          <p class="work-heading">Choose</p>
+          <p class="work-text">Click on the choose button so that you can choose the file that you want to select.</p>
+        </div>
+        <div class="work">
+          <p class="work-heading">Select</p>
+          <p class="work-text">Browse through the system and seletc the  document that you wanted to upload and click on the open button.</p>
+        </div>
+        <div class="work">
+          <p class="work-heading">Upload</p>
+          <p class="work-text">After confirmin the doument click on the upload button in order to proceed to the next step that is to verify.</p>
+        </div>
+      </div>
+      
+</body>
